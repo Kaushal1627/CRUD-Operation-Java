@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DHIMAN GROUP OF INDUSTIRES EMPLOYEE</title>
+<link rel="stylesheet" href="frontend.css">
+</head>
+<body>
+	<h1>
+		DHIMAN GROUP OF INDUSTIRES EMPLOYEE FORM
+	</h1>
+	<div id="container">
+		
+		<form action="operation.jsp" method="post">
+			<label for="id">ID</label>
+	 		<input type="number" name="id" placeholder="Enter your Id">
+	 
+			 <label for="name">Name</label>
+	 		 <input type="text" name="name" placeholder="Enter your name">
+	 
+	 		 <label for="password">Password</label>
+	 		 <input type="password" name="password" placeholder="Enter your password">
+	 
+	 		 <label for="email">E-mail</label>
+	 		 <input type="email" name="email" placeholder="Enter your email">
+	 
+	 		 <label for="mobile">Mobile</label>
+	 		 <input type="text" name="mobile" placeholder="Enter your number">
+	 
+	 		 <label for="address">Address</label>
+	 		 <input type="text" name="address" placeholder="Enter your address">
+	 		 
+	 		 <label for="yesno">
+	 		 Update<input type="radio" name="yesno" id="yescheck" onclick="yesnoCheck()" />
+	 		 No-Update<input type="radio" name="yesno" id="nocheck" onclick="yesnoCheck()" checked />
+	 		 </label>
+	 		 <hr>
+	 		 <div id="ifyes">
+	 		 	<label for="newname">New Name</label>
+	 		 	<input type="text" name="newname" placeholder="Enter your newname">
+	 
+	 		 	<label for="newpassword">New Password</label>
+	 		 	<input type="password" name="newpassword" placeholder="Enter your newpassword">
+	 
+	 			 <label for="newemail">New E-mail</label>
+	 			 <input type="email" name="newemail" placeholder="Enter your newemail">
+	 
+	 			 <label for="newmobile">New Mobile</label>
+	 			 <input type="text" name="newmobile" placeholder="Enter your newnumber">
+	 
+	 			 <label for="newaddress">New Address</label>
+	 			 <input type="text" name="newaddress" placeholder="Enter your newaddress">
+	 		 </div>
+	 		 <div id="option">
+	 		 		<input type="submit" value="Insert" name="button">
+	 		 		<input type="submit" value="Delete" name="button">
+	 		 		<input type="submit" value="Update" name="button">
+	 		 		<input type="submit" value="Display" name="button">
+	 		 		<input type="reset" value="Reset" name="button">
+	 		 </div>
+		</form>
+	</div>
+	 
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
